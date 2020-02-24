@@ -1,0 +1,59 @@
+{
+    "title": "double negation inside OR",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "NOT": {
+                                "LT": {
+                                    "courses_avg": 98
+                                }
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "nurs"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "cics"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"nurs","courses_id":"509","courses_avg":98.21},
+        {"courses_dept":"nurs","courses_id":"509","courses_avg":98.21},
+        {"courses_dept":"nurs","courses_id":"578","courses_avg":98.5},
+        {"courses_dept":"nurs","courses_id":"578","courses_avg":98.5},
+        {"courses_dept":"nurs","courses_id":"578","courses_avg":98.58},
+        {"courses_dept":"nurs","courses_id":"578","courses_avg":98.58},
+        {"courses_dept":"nurs","courses_id":"509","courses_avg":98.71},
+        {"courses_dept":"nurs","courses_id":"509","courses_avg":98.71}
+    ]
+}
+

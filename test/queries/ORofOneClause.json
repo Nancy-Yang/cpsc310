@@ -1,0 +1,28 @@
+{
+    "title": "SELECT dept, avg, instructor WHERE instructor's name is smith matthew and avg > 99",
+    "query": {
+        "WHERE": {
+            "OR" : [
+                {
+                    "IS": {
+                        "courses_instructor":"smith, matthew"
+                    }
+                }
+            ]
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"math","courses_avg":60.29,"courses_instructor":"smith, matthew"},
+        {"courses_dept":"math","courses_avg":76.37,"courses_instructor":"smith, matthew"}
+    ]
+}

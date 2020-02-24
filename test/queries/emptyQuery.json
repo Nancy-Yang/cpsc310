@@ -1,0 +1,6 @@
+{
+    "title": "SELECT dept, avg WHERE average < 10",
+    "query": {},
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}

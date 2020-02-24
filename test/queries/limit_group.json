@@ -1,0 +1,30 @@
+{
+    "title": "order key is wrong",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_id"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["courses_avg"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_dept"],
+            "APPLY": [{
+                "maxSeats": {
+                    "COUNT": "courses_id"
+                }
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result":"Unexpected response status: 400"
+}

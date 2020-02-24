@@ -1,0 +1,49 @@
+{
+    "title": "SELECT dept, avg, instructor WHERE instructor's name is smith matthew and avg > 99",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "countNumber",
+                "overallAvg"
+            ],
+            "ORDER": "courses_title"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+
+                {
+                    "countNumber": {
+                        "COUNT": "courses_pass"
+                    }
+                },
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_title":"algb topology i","countNumber":1,"overallAvg":99.78},
+        {"courses_title":"assess lrn diffi","countNumber":3,"overallAvg":98.38},
+        {"courses_title":"career planning","countNumber":1,"overallAvg":99.19},
+        {"courses_title":"cl pro prim care","countNumber":1,"overallAvg":98.46},
+        {"courses_title":"dev el sk df&hrd","countNumber":1,"overallAvg":98.45},
+        {"courses_title":"educ stds autism","countNumber":3,"overallAvg":98.7},
+        {"courses_title":"fam nrs pract","countNumber":2,"overallAvg":98.54},
+        {"courses_title":"multimedia sys","countNumber":1,"overallAvg":98.75},
+        {"courses_title":"work int health","countNumber":1,"overallAvg":98.98}
+    ]
+}
+

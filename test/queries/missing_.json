@@ -1,0 +1,20 @@
+{
+    "title": "Missing _ in keys",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_d": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "coursesavg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}
+

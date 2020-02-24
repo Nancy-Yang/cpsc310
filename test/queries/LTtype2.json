@@ -1,0 +1,20 @@
+{
+    "title": "LT with string",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_fail": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}
+

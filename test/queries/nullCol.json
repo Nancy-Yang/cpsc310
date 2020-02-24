@@ -1,0 +1,17 @@
+{
+    "title": "colomn equals to null",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": null,
+            "ORDER":"courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}
+

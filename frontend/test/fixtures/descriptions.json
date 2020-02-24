@@ -1,0 +1,16 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query2": "test one transformation - maxAvg, add group",
+    "query3": "all + IS, EQ, GT",
+    "query4": "any + IS, EQ, GT",
+    "query5": "none + IS, EQ, GT",
+    "query6": "order my multiple cols",
+    "query7": "order by DOWN",
+    "query8": "transformation has multiple fields",
+    "query9": "test rooms tab",
+    "query10": "test empty apply",
+    "query11": "test null order",
+    "query12": "check all columns of rooms dataset",
+    "query13": "order by new apply keys",
+    "query14": "does not have order"
+}

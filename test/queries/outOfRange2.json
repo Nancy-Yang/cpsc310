@@ -1,0 +1,20 @@
+{
+    "title": "out of average Range",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 300.00
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}
+

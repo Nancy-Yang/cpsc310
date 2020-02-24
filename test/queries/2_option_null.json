@@ -1,0 +1,12 @@
+{
+    "title": "string assigned with number",
+    "query": {
+        "WHERE": {
+            "courses_dept":20
+        },
+        "OPTIONS": { }
+    },
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}
+

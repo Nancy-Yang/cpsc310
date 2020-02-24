@@ -1,0 +1,25 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 97",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_title"
+            ],
+            "ORDER":"courses_title"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"math","courses_id":"527","courses_title":"algb topology i"},
+        {"courses_dept":"math","courses_id":"527","courses_title":"algb topology i"},
+        {"courses_dept":"cnps","courses_id":"574","courses_title":"career planning"}
+    ]
+}
+

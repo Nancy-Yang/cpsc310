@@ -1,0 +1,20 @@
+{
+    "title": "out of average Range",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": -0.2
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}
+

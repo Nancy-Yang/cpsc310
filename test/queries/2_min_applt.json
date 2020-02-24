@@ -1,0 +1,36 @@
+{"title": "group by title and have multiple apply field",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_pass"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"cnps","courses_uuid":"26777","overallAvg":99.19},
+        {"courses_dept":"math","courses_uuid":"5373","overallAvg":99.78},
+        {"courses_dept":"math","courses_uuid":"5374","overallAvg":99.78}]
+}
+

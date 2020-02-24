@@ -1,0 +1,29 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 85 and dept is like %cs",
+    "query": {
+        "WHERE": {
+            "OR" : [
+                {
+                    "IS": {
+                        "courses_dept":"**"
+                    }
+                },
+                {
+                    "IS":{
+                        "courses_id":"*"
+                    }
+                }
+            ]
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result":"404"
+}

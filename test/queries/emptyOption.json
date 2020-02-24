@@ -1,0 +1,19 @@
+{
+    "title": "SELECT dept, avg, instructor WHERE instructor's name is smith matthew and avg > 99",
+    "query": {
+        "WHERE": {
+            "AND" : [
+                {
+                    "IS": {
+                        "courses_instructor":"smith, matthew"
+                    }
+                }
+            ]
+
+        },
+        "OPTIONS": {
+        }
+    },
+    "isQueryValid": false,
+    "result":"invalid option"
+}

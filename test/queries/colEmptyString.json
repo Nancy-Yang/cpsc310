@@ -1,0 +1,18 @@
+{
+    "title": "wrong key in columns1",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": "",
+            "ORDER": "courses8_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result":"Column empty string"
+}
+
+

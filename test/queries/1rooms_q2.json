@@ -1,0 +1,32 @@
+{
+    "title": "Canary: Should be able to query with AND and OR",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title",
+                "courses_audit"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": {
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "invalid"
+}

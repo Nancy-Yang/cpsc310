@@ -1,0 +1,20 @@
+{
+    "title": "Wrong key. Don't have key called courses_d",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_d": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}
+

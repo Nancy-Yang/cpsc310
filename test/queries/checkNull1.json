@@ -1,0 +1,21 @@
+{
+    "title": "SELECT dept, avg WHERE uuid is null",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_uuid":null
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Unexpected response status: 400"
+}
+
+
