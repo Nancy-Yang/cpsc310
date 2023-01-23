@@ -22,7 +22,7 @@
         "@types/restify": "^2.0.X",
         "chai": "4.1.2",
         "chai-as-promised": "7.1.1",
-        "chai-http": "3.0.0",
+        "chai-http": "4.3.0",
         "dotenv": "4.0.0",
         "fs-extra": "7.0.0",
         "jszip": "3.1.5",
